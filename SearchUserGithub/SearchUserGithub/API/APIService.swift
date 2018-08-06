@@ -28,6 +28,7 @@ struct APIService {
                     {
                         users.append(user)
                     }
+                    completion(users)
                 }
                 
             }
