@@ -12,9 +12,11 @@
 		32B7633C211956CC00673656 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32B7633A211956CC00673656 /* Main.storyboard */; };
 		32B7633E211956CF00673656 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B7633D211956CF00673656 /* Assets.xcassets */; };
 		32B76341211956CF00673656 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32B7633F211956CF00673656 /* LaunchScreen.storyboard */; };
+		BD353B56BD511B3F3BE74AF1 /* Pods_SearchUserMVP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077413E2679F24406540DA2F /* Pods_SearchUserMVP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		077413E2679F24406540DA2F /* Pods_SearchUserMVP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchUserMVP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B76333211956CC00673656 /* SearchUserMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchUserMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B76336211956CC00673656 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32B76338211956CC00673656 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		32B7633D211956CF00673656 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32B76340211956CF00673656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32B76342211956CF00673656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD55C39268224864B1F6C949 /* Pods-SearchUserMVP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchUserMVP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SearchUserMVP/Pods-SearchUserMVP.debug.xcconfig"; sourceTree = "<group>"; };
+		EC792125E067572892CC5FDA /* Pods-SearchUserMVP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchUserMVP.release.xcconfig"; path = "Pods/Target Support Files/Pods-SearchUserMVP/Pods-SearchUserMVP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD353B56BD511B3F3BE74AF1 /* Pods_SearchUserMVP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				32B76335211956CC00673656 /* SearchUserMVP */,
 				32B76334211956CC00673656 /* Products */,
+				F0148BC5C1DD0DE13573019A /* Pods */,
+				3C13691C9F53635A6F55E30F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +119,23 @@
 			path = "API & Service";
 			sourceTree = "<group>";
 		};
+		3C13691C9F53635A6F55E30F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				077413E2679F24406540DA2F /* Pods_SearchUserMVP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0148BC5C1DD0DE13573019A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD55C39268224864B1F6C949 /* Pods-SearchUserMVP.debug.xcconfig */,
+				EC792125E067572892CC5FDA /* Pods-SearchUserMVP.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +143,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32B76345211956CF00673656 /* Build configuration list for PBXNativeTarget "SearchUserMVP" */;
 			buildPhases = (
+				D87770972EB51B8E11AB14C3 /* [CP] Check Pods Manifest.lock */,
 				32B7632F211956CC00673656 /* Sources */,
 				32B76330211956CC00673656 /* Frameworks */,
 				32B76331211956CC00673656 /* Resources */,
+				60A23441CC85D6B5196865F0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -177,6 +203,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60A23441CC85D6B5196865F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SearchUserMVP/Pods-SearchUserMVP-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SearchUserMVP/Pods-SearchUserMVP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D87770972EB51B8E11AB14C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SearchUserMVP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		32B7632F211956CC00673656 /* Sources */ = {
@@ -326,14 +395,12 @@
 		};
 		32B76346211956CF00673656 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD55C39268224864B1F6C949 /* Pods-SearchUserMVP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SearchUserMVP/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ThinhLe.SearchUserMVP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -343,14 +410,12 @@
 		};
 		32B76347211956CF00673656 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC792125E067572892CC5FDA /* Pods-SearchUserMVP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SearchUserMVP/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ThinhLe.SearchUserMVP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
