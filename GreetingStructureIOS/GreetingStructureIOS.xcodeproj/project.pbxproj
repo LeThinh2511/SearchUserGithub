@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		32B762F82119322C00673656 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B762F72119322C00673656 /* AppDelegate.swift */; };
-		32B762FA2119322C00673656 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B762F92119322C00673656 /* ViewController.swift */; };
 		32B762FD2119322C00673656 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32B762FB2119322C00673656 /* Main.storyboard */; };
 		32B762FF2119322D00673656 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B762FE2119322D00673656 /* Assets.xcassets */; };
 		32B763022119322D00673656 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32B763002119322D00673656 /* LaunchScreen.storyboard */; };
+		32B763172119399600673656 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B763162119399600673656 /* Person.swift */; };
+		32B7631921193A2600673656 /* GreetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B7631821193A2600673656 /* GreetingView.swift */; };
+		32B7631B21193A7B00673656 /* GreetingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B7631A21193A7B00673656 /* GreetingPresenter.swift */; };
+		32B7631E21193CC500673656 /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B7631D21193CC500673656 /* GreetingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		32B762F42119322C00673656 /* GreetingStructureIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreetingStructureIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B762F72119322C00673656 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		32B762F92119322C00673656 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		32B762FC2119322C00673656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32B762FE2119322D00673656 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32B763012119322D00673656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32B763032119322D00673656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32B763162119399600673656 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		32B7631821193A2600673656 /* GreetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingView.swift; sourceTree = "<group>"; };
+		32B7631A21193A7B00673656 /* GreetingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingPresenter.swift; sourceTree = "<group>"; };
+		32B7631D21193CC500673656 /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,57 @@
 		32B762F62119322C00673656 /* GreetingStructureIOS */ = {
 			isa = PBXGroup;
 			children = (
-				32B762F72119322C00673656 /* AppDelegate.swift */,
-				32B762F92119322C00673656 /* ViewController.swift */,
-				32B762FB2119322C00673656 /* Main.storyboard */,
-				32B762FE2119322D00673656 /* Assets.xcassets */,
+				32B7631C21193AEC00673656 /* Presenters */,
+				32B763152119397300673656 /* Views */,
+				32B763142119395C00673656 /* Application */,
+				32B763122119393F00673656 /* Models */,
+				32B763132119395000673656 /* Resources */,
 				32B763002119322D00673656 /* LaunchScreen.storyboard */,
 				32B763032119322D00673656 /* Info.plist */,
 			);
 			path = GreetingStructureIOS;
+			sourceTree = "<group>";
+		};
+		32B763122119393F00673656 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				32B763162119399600673656 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		32B763132119395000673656 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				32B762FE2119322D00673656 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		32B763142119395C00673656 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				32B762F72119322C00673656 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		32B763152119397300673656 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				32B762FB2119322C00673656 /* Main.storyboard */,
+				32B7631821193A2600673656 /* GreetingView.swift */,
+				32B7631D21193CC500673656 /* GreetingViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		32B7631C21193AEC00673656 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				32B7631A21193A7B00673656 /* GreetingPresenter.swift */,
+			);
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +184,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32B762FA2119322C00673656 /* ViewController.swift in Sources */,
+				32B763172119399600673656 /* Person.swift in Sources */,
+				32B7631921193A2600673656 /* GreetingView.swift in Sources */,
+				32B7631B21193A7B00673656 /* GreetingPresenter.swift in Sources */,
+				32B7631E21193CC500673656 /* GreetingViewController.swift in Sources */,
 				32B762F82119322C00673656 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
