@@ -8,10 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		32B76337211956CC00673656 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B76336211956CC00673656 /* AppDelegate.swift */; };
-		32B76339211956CC00673656 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B76338211956CC00673656 /* ViewController.swift */; };
+		32B76339211956CC00673656 /* SearchUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B76338211956CC00673656 /* SearchUserViewController.swift */; };
 		32B7633C211956CC00673656 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32B7633A211956CC00673656 /* Main.storyboard */; };
 		32B7633E211956CF00673656 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B7633D211956CF00673656 /* Assets.xcassets */; };
 		32B76341211956CF00673656 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32B7633F211956CF00673656 /* LaunchScreen.storyboard */; };
+		32B7634F2119596E00673656 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B7634E2119596E00673656 /* User.swift */; };
+		32B7635621195A3800673656 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B7635521195A3800673656 /* APIService.swift */; };
+		32B7635821195BCE00673656 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B7635721195BCE00673656 /* BaseRequest.swift */; };
+		32B7635A21195BEF00673656 /* SearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B7635921195BEF00673656 /* SearchRequest.swift */; };
+		32B7635D211984FF00673656 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B7635C211984FF00673656 /* SearchResponse.swift */; };
+		32B7635F2119890100673656 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B7635E2119890100673656 /* SearchResultViewController.swift */; };
+		32B7636321198E4500673656 /* SearchUserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B7636221198E4500673656 /* SearchUserPresenter.swift */; };
 		BD353B56BD511B3F3BE74AF1 /* Pods_SearchUserMVP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077413E2679F24406540DA2F /* Pods_SearchUserMVP.framework */; };
 /* End PBXBuildFile section */
 
@@ -19,11 +26,18 @@
 		077413E2679F24406540DA2F /* Pods_SearchUserMVP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchUserMVP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B76333211956CC00673656 /* SearchUserMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchUserMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B76336211956CC00673656 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		32B76338211956CC00673656 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		32B76338211956CC00673656 /* SearchUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserViewController.swift; sourceTree = "<group>"; };
 		32B7633B211956CC00673656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32B7633D211956CF00673656 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32B76340211956CF00673656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32B76342211956CF00673656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32B7634E2119596E00673656 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		32B7635521195A3800673656 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		32B7635721195BCE00673656 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		32B7635921195BEF00673656 /* SearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequest.swift; sourceTree = "<group>"; };
+		32B7635C211984FF00673656 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		32B7635E2119890100673656 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		32B7636221198E4500673656 /* SearchUserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserPresenter.swift; sourceTree = "<group>"; };
 		CD55C39268224864B1F6C949 /* Pods-SearchUserMVP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchUserMVP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SearchUserMVP/Pods-SearchUserMVP.debug.xcconfig"; sourceTree = "<group>"; };
 		EC792125E067572892CC5FDA /* Pods-SearchUserMVP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchUserMVP.release.xcconfig"; path = "Pods/Target Support Files/Pods-SearchUserMVP/Pods-SearchUserMVP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +89,7 @@
 		32B76348211956E000673656 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				32B7634E2119596E00673656 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -83,7 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				32B7633F211956CF00673656 /* LaunchScreen.storyboard */,
-				32B76338211956CC00673656 /* ViewController.swift */,
+				32B7635E2119890100673656 /* SearchResultViewController.swift */,
+				32B76338211956CC00673656 /* SearchUserViewController.swift */,
 				32B7633A211956CC00673656 /* Main.storyboard */,
 			);
 			path = Views;
@@ -92,6 +108,7 @@
 		32B7634A211956F500673656 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				32B7636221198E4500673656 /* SearchUserPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -115,8 +132,44 @@
 		32B7634D2119575200673656 /* API & Service */ = {
 			isa = PBXGroup;
 			children = (
+				32B76351211959AA00673656 /* Service */,
+				32B76350211959A100673656 /* API */,
 			);
 			path = "API & Service";
+			sourceTree = "<group>";
+		};
+		32B76350211959A100673656 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				32B76353211959C200673656 /* Response */,
+				32B76352211959B800673656 /* Request */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		32B76351211959AA00673656 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				32B7635521195A3800673656 /* APIService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		32B76352211959B800673656 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				32B7635721195BCE00673656 /* BaseRequest.swift */,
+				32B7635921195BEF00673656 /* SearchRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		32B76353211959C200673656 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				32B7635C211984FF00673656 /* SearchResponse.swift */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 		3C13691C9F53635A6F55E30F /* Frameworks */ = {
@@ -252,8 +305,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32B76339211956CC00673656 /* ViewController.swift in Sources */,
+				32B7635D211984FF00673656 /* SearchResponse.swift in Sources */,
+				32B7636321198E4500673656 /* SearchUserPresenter.swift in Sources */,
+				32B7635821195BCE00673656 /* BaseRequest.swift in Sources */,
+				32B76339211956CC00673656 /* SearchUserViewController.swift in Sources */,
+				32B7635A21195BEF00673656 /* SearchRequest.swift in Sources */,
+				32B7635621195A3800673656 /* APIService.swift in Sources */,
 				32B76337211956CC00673656 /* AppDelegate.swift in Sources */,
+				32B7635F2119890100673656 /* SearchResultViewController.swift in Sources */,
+				32B7634F2119596E00673656 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +460,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SearchUserMVP/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ThinhLe.SearchUserMVP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -415,7 +478,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SearchUserMVP/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ThinhLe.SearchUserMVP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
